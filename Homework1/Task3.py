@@ -7,4 +7,4 @@ while summa > 9:
     for i in number:
         summa += int(i)
     number = str(summa)
-print(summa
+print(summa)
