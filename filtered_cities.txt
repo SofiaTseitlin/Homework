@@ -1,0 +1,2 @@
+London : 8900
+Moskau : 12000
