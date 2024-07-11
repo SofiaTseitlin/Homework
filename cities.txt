@@ -1,0 +1,3 @@
+Paris : 7500
+Moskau : 12000
+London : 8900
