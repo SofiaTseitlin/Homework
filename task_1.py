@@ -1,4 +1,9 @@
-text_file = open("input.txt", "r")
+import sys
+try:
+    text_file = open("input.txt", "r")
+except FileNotFoundError:
+    print("Файл input.txt не найден")
+    sys.exit()
 summa = 0
 quantity = 0
 information = []
@@ -12,7 +17,6 @@ for row in information:
 average = summa / quantity
 with open("output.txt", "w") as output:
     for row in information:
-        if int(row[1]) >= average:
-            output.write(str(row) + '\n')
-output.close()
+        if int(row[1]) > average:
+            output.write(row[0] + row[1] + '\n')
 text_file.close()
